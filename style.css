@@ -1,0 +1,32 @@
+body {
+    background: linear-gradient(to bottom, rgb(0, 249, 183), cyan);
+    height: 100vh; /* Set body height to viewport height */
+}
+.payment-title {
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 3vh;
+    padding: 5vh 5vw;
+    text-align: center;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn {
+    background-image: linear-gradient(to right, #e9eff7 0%, #d7dde8 50%, #c0ccda 100%);
+    border: none; /* Remove default button border */
+    border-radius: 10px; /* Rounded corners */
+    margin: 10px 20px;
+    padding: 10px;
+    color: #333; /* Text color for button */
+    cursor: pointer; /* Indicate clickable element */
+  }
+  
+  /* Optional: Hover effect for the button */
+  .btn:hover {
+    background-image: linear-gradient(to right, #d7dde8 0%, #c0ccda 50%, #a9afd2 100%);
+  }
+  
