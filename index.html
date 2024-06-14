@@ -10,11 +10,55 @@
     <div class="container">
       <h1 class="payment-title">Payment Splitter</h1>
       <div class="input-group mb-3"></div>
-      <div class="button-container">
-        <button type="button" class="btn">Add Expense</button>
-        <button type="button" class="btn">Calculate</button>
-      </div>
+      <button type="button" class="btn btn-primary add-expense">
+        Add Expense
+      </button>
+      <button type="button" class="btn btn-primary">Calculate</button>
       <div id="split-results"></div>
+    </div>
+    <div id="add-expense-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Add Expense</h2>
+        <form id="expense-form">
+          <div class="form-group">
+            <label for="expense-name">Expense Name:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="expense-name"
+              name="expenseName"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="expense-cost">Cost:</label>
+            <input
+              type="number"
+              class="form-control"
+              id="expense-cost"
+              name="expenseCost"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="payer">Payer:</label>
+            <select class="form-control" id="payer" name="payer"></select>
+          </div>
+          <div class="form-group">
+            <label for="shared-by">Shared By:</label>
+            <select
+              multiple
+              class="form-control"
+              id="shared-by"
+              name="sharedBy[]"
+            ></select>
+          </div>
+          <div class.form-group>
+            <button type="submit" class="btn btn-primary">Confirm</button>
+          </div>
+        </form>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>

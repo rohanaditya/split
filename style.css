@@ -8,7 +8,62 @@ body {
     font-size: 3vh;
     padding: 5vh 5vw;
     text-align: center;
+}
+  .button-container {
+    display: flex;
+    justify-content: center;
   }
+  
+  /* Style for the lavender gradient button (optional) */
+  .calculate-button {
+    background-image: linear-gradient(to right, #e9eff7 0%, #d7dde8 50%, #c0ccda 100%);
+    border: none; /* Remove default button border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px 20px;
+    color: #333; /* Text color for button */
+    cursor: pointer; /* Indicate clickable element */
+  }
+  
+  /* Optional: Hover effect for the button */
+  .calculate-button:hover {
+    background-image: linear-gradient(to right, #d7dde8 0%, #c0ccda 50%, #a9afd2 100%);
+  }
+  
+  /* Modal styles */
+  .modal {
+    display: none; /* Initially hidden */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 90vw;
+    height: 50vh;
+    overflow: auto; /* Enable scroll if content overflows */
+    background-color: rgba(0,0,0,0.4); /* Transparent black background */
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%; /* Full modal content width */
+  }
+  
+  /* Close button inside the modal */
+  .close-modal {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .close-modal:hover, .close-modal:focus {
+    color: black;
+    text-decoration: none;
+  }
+  
   
   .button-container {
     display: flex;
@@ -19,7 +74,7 @@ body {
     background-image: linear-gradient(to right, #e9eff7 0%, #d7dde8 50%, #c0ccda 100%);
     border: none; /* Remove default button border */
     border-radius: 10px; /* Rounded corners */
-    margin: 10px 20px;
+    margin: 2.5vw 5vh;
     padding: 10px;
     color: #333; /* Text color for button */
     cursor: pointer; /* Indicate clickable element */
